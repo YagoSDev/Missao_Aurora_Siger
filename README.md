@@ -104,7 +104,7 @@ Para cada uma dessas leituras, o Gemini recebe os dados da telemetria e retorna 
 
 A IA não possui autoridade para liberar uma decolagem. Seu papel é complementar a interpretação das falhas já detectadas pelas regras do sistema.
 
-## ▶️ Como executar
+## ▶️ Como executar:
 
 O notebook foi preparado para ser utilizado no **Google Colab**. Todos os imports ficam no início do notebook, mas a configuração da chave do Gemini foi mantida em uma etapa separada. Assim, quem não possui uma chave de API consegue executar normalmente toda a parte principal do projeto.
 
@@ -182,7 +182,7 @@ Os registros podem ser organizados em um DataFrame. Caso a análise com Gemini j
 
 ![Tabela final de resultados](assets/tabela_resultados_com_ia.png)
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias utilizadas:
 
 - Python
 - Google Colab
