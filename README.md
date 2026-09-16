@@ -106,17 +106,17 @@ A IA não possui autoridade para liberar uma decolagem. Seu papel é complementa
 
 ## ▶️ Como executar:
 
-O notebook foi preparado para ser utilizado no **Google Colab**. Todos os imports ficam no início do notebook, mas a configuração da chave do Gemini foi mantida em uma etapa separada. Assim, quem não possui uma chave de API consegue executar normalmente toda a parte principal do projeto.
+O notebook foi preparado para ser utilizado no **Google Colab**. A instalação e os imports da parte principal ficam no início do notebook (`pandas`, `time` e o acesso a arquivos do Colab); a instalação da biblioteca do Gemini e a configuração da chave de API foram mantidas juntas em uma etapa separada, mais à frente. Assim, quem não possui uma chave de API consegue executar normalmente toda a parte principal do projeto sem instalar nada relacionado à IA.
 
 ### Execução com a API do Gemini
 
 1. Abra `Aurora.ipynb` no Google Colab.
-2. Execute a célula inicial de instalação e imports.
+2. Execute a célula inicial de imports.
 3. Faça o upload do arquivo `telemetry_aurora.csv`.
 4. Execute o carregamento dos dados e a análise principal.
 5. Gere uma chave no Google AI Studio.
 6. Vá até a seção **Etapa opcional — Google Gemini**.
-7. Informe sua chave quando solicitado.
+7. Execute a célula de instalação e configuração do Gemini e informe sua chave quando solicitado.
 8. Execute a análise do Gemini para as leituras com falha.
 
 > A chave da API não deve ser escrita diretamente no notebook nem enviada ao repositório público.
@@ -126,7 +126,7 @@ O notebook foi preparado para ser utilizado no **Google Colab**. Todos os import
 Esta é a forma principal de executar e testar o projeto.
 
 1. Abra `Aurora.ipynb` no Google Colab.
-2. Execute a primeira célula para instalar e importar as bibliotecas.
+2. Execute a primeira célula para importar as bibliotecas.
 3. Faça upload do arquivo:
 
 ```text
@@ -142,7 +142,7 @@ telemetry_aurora.csv
    - autonomia restante;
    - status da decolagem;
    - parâmetros que apresentaram falha.
-7. Use o bloco de consulta para visualizar uma leitura específica.
+7. Use o bloco de consulta para digitar o número da leitura que deseja visualizar; o código busca e exibe automaticamente os dados correspondentes.
 8. Use o bloco de tabela para comparar todos os resultados.
 9. Ignore as células da seção do Gemini.
 
@@ -160,11 +160,11 @@ As imagens abaixo mostram a execução principal do sistema sem necessidade da A
 
 ![Leituras 7 a 9](assets/varredura_leituras_7_a_9.png)
 
-![Leitura 10 e final da varredura](assets/varredura_leitura_10.png)
+![Leitura 10 e final da varredura](assets/varredura_leituras_10.png)
 
 ### Consulta de uma leitura
 
-Os resultados ficam armazenados em uma lista, permitindo consultar uma leitura específica sem repetir toda a análise.
+Os resultados ficam armazenados em uma lista, permitindo consultar uma leitura específica sem repetir toda a análise. Basta digitar o número da situação desejada quando solicitado.
 
 ![Consulta de uma leitura específica](assets/consulta_leitura_individual.png)
 
@@ -172,15 +172,19 @@ Os resultados ficam armazenados em uma lista, permitindo consultar uma leitura e
 
 Quando a etapa opcional da API é utilizada, o Gemini analisa apenas as leituras que tiveram a decolagem abortada.
 
-![Gemini analisando as leituras 3 a 5](assets/gemini_analise_leituras_3_a_5.png)
+![Gemini analisando as leituras 3 a 5](assets/analises_gemini_3_a_5.png)
 
-![Gemini analisando as leituras 6 e 10](assets/gemini_analise_leituras_6_e_10.png)
+![Gemini analisando as leituras 6 e 10](assets/analises_gemini_6_e_10.png)
 
 ### Tabela de resultados
 
-Os registros podem ser organizados em um DataFrame. Caso a análise com Gemini já tenha sido executada, as respostas salvas também podem aparecer na tabela.
+Os registros podem ser organizados em um DataFrame.
 
-![Tabela final de resultados](assets/tabela_resultados_com_ia.png)
+![Tabela de resultados](assets/tabela_resultados.png)
+
+Caso a análise com Gemini já tenha sido executada, as respostas salvas também podem aparecer na tabela.
+
+![Tabela de resultados com a análise do Gemini](assets/tabela_resultados_gemini.png)
 
 ## 🛠️ Tecnologias utilizadas:
 
@@ -196,20 +200,24 @@ Os registros podem ser organizados em um DataFrame. Caso a análise com Gemini j
 ```text
 Aurora_Siger/
 │
-├── Aurora.ipynb
+├── Aurora_2.ipynb
 ├── telemetry_aurora.csv
 ├── Relatório Operacional de Pré-Decolagem.docx
 ├── README.md
+│
+├── fluxograma/
+│   └── fluxograma_projeto.png
 │
 └── assets/
     ├── varredura_leituras_1_a_3.png
     ├── varredura_leituras_4_a_6.png
     ├── varredura_leituras_7_a_9.png
-    ├── varredura_leitura_10.png
+    ├── varredura_leituras_10.png
     ├── consulta_leitura_individual.png
-    ├── gemini_analise_leituras_3_a_5.png
-    ├── gemini_analise_leituras_6_e_10.png
-    └── tabela_resultados_com_ia.png
+    ├── analises_gemini_3_a_5.png
+    ├── analises_gemini_6_e_10.png
+    ├── tabela_resultados.png
+    └── tabela_resultados_gemini.png
 ```
 
 ## 🔗 Repositório
