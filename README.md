@@ -242,6 +242,20 @@ O projeto também considera a eficiência energética e a sustentabilidade. Alé
 
 ## 📚 Referências
 
-- Google AI for Developers — Gemini API: https://ai.google.dev/gemini-api/docs?hl=pt-br
-- Google AI Studio — API Keys: https://aistudio.google.com/api-keys
+- Google AI for Developers — Gemini API: [https://ai.google.dev/gemini-api/docs?hl=pt-br](https://ai.google.dev/gemini-api/docs?hl=pt-br)
+
+- Google AI Studio — API Keys: [https://aistudio.google.com/api-keys](https://aistudio.google.com/api-keys)
+
+- Instituto de Aeronáutica e Espaço (IAE/DCTA) — Projetos Espaciais: [https://iae.dcta.mil.br/index.php/projects](https://iae.dcta.mil.br/index.php/projects)
+
+- Instituto de Estudos Avançados (IEAv) — Divisão de Aerotermodinâmica e Hipersônica: [https://ieav.cta.br/](https://ieav.cta.br/)
+
+- Instituto Tecnológico de Aeronáutica (ITA) — Engenharia Aeroespacial: [https://www.ita.br/aer/aesp](https://www.ita.br/aer/aesp)
+
+- NASA Armstrong Flight Research Center — Autonomous Systems: [https://www.nasa.gov/centers-and-facilities/armstrong/autonomous-systems/](https://www.nasa.gov/centers-and-facilities/armstrong/autonomous-systems/)
+
+- European Space Agency (ESA) — Telemetry and Telecommand: [https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Onboard_Computers_and_Data_Handling/Telemetry_Telecommand](https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Onboard_Computers_and_Data_Handling/Telemetry_Telecommand)
+
+- European Space Agency (ESA) — Power Systems: [https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Power_Systems](https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Power_Systems)
+
 - Materiais disponibilizados pela FIAP para a Fase 1 de Ciência da Computação.
